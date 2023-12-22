@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+
+body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+}
+
+.h:hover {
+  cursor: pointer;
+}
+
+.h {
+  background-color: white;
+  padding: 10px;
+}
+
+h1,
+p,
+.paragraph {
+  margin: 0px;
+  padding: 10px 0px 5px 10px;
+  height: auto;
+  justify-self: flex-start;
+  width: 100%;
+}
+
+h1::first-letter {
+  text-transform: uppercase;
+}
+p::first-letter {
+  text-transform: uppercase;
+}
+
+.paragraph,
+p {
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Helvetica,
+    "Apple Color Emoji",
+    Arial,
+    sans-serif,
+    "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-size: 13px;
+}
+
+h1 {
+  font-size: 1.4em;
+  line-height: 1.1;
+}
+
+div:focus {
+  outline: none;
+}
+
+.paragraph::after {
+  content: "Type / for blocks, @ to link docs or people";
+  color: #a7a7a7;
+  opacity: 0.9;
+}
+
+.paragraph.has-content::after {
+  content: ""; /* Clear the placeholder text */
+  color: transparent; /* Hide it visually */
+}
+
+.wholePage {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+p:focus {
+  outline: none;
+}
+
+#editor {
+  padding: 10px;
+  border: none;
+}
+
+h2 {
+  padding: 0px 0px 0px 20px;
+  margin-bottom: 10px;
+}
+
+hr {
+  border: 1px solid rgb(225, 225, 225);
+  width: 67vw;
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  border: 1px solid rgb(225, 225, 225);
+  border-radius: 2px;
+  width: 67vw;
+  align-self: center;
+  height: auto;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.container-paragraph {
+  margin: 0;
+  padding: 0px 4px 0px 4px;
+  text-align: center;
+  background-color: rgb(190, 255, 190);
+  font-weight: bolder;
+  width: 10px;
+  border-radius: 3;
+}
+
+.container-hr-first {
+  transform: rotate(90deg);
+  width: 10px;
+  height: 100%;
+  border: 1px solid rgb(225, 225, 225);
+}
+
+.first-cont-div {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-clock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  color: #c2c2c2;
+  padding: 0;
+  margin: 0;
+  width: fit-content;
+}
+
+.second img {
+  margin-left: 7px;
+}
